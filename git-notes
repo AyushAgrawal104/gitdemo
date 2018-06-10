@@ -280,13 +280,9 @@ K) Merge Confilicts
         contining both merge then delete those you did not want.
         Best way to use p4merge tool.
 
+NOTE: When there is any commit in merge then it take commit message
 ------------------------------------------------------------------------------------------
 
 Rebasing
 
 a) simple rebase
-
-NOTE: When there is any commit in merge then it take commit message
-
-
-
