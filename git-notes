@@ -295,3 +295,7 @@ b) Working with conflicts in rebase
         2)TO resolve
                 git mergetool    -- resolve merging
                  
+        3) Rebase with origin   
+                git pull --rebase origin master
+
+        NOTE:: git fetch update refrenes.
