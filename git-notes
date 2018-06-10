@@ -286,3 +286,4 @@ NOTE: When there is any commit in merge then it take commit message
 Rebasing
 
 a) simple rebase
+        git rebase branchName
