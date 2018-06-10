@@ -1,0 +1,292 @@
+GIT Tutorial:
+
+Make a Git Repository:
+
+Name Convention -- all Small
+                    seprated by -
+        
+git version  -- for check git version
+
+Global setup to start
+
+git config --global user.Name "Ayush"
+git config --global user.email "mail"
+git config --global --list
+
+
+Now for cloning we require url of Repository
+
+now in Local clone GIT
+git clone url
+
+make a new dir and all file init
+
+git status  -- Tell the status of git
+                Tell if there is any change between any file in all four staages
+
+
+Untracked File  -- File only in working diretory not in staging area
+
+To add use Git add *
+
+new file --  File came in staging area not commit yet
+
+git commit -m "message for Commit"
+
+Till Every thing is on Local Nothing on github
+
+NOW PUSH
+
+git push origin master 
+
+origin is a remote that make automatically by git at time of installing
+
+
+-------------------------------------------------------------------------
+
+Text Editor SetUp Now I have Avilable for Vs code
+
+--------------------------------------------------------------------------
+
+Creating GIT project in three way:
+
+1> new Project with no previous setup
+
+a) git init fresh-project
+        Ceate a git a local git repo on your system. It create a .git folder in your project
+
+b) git status
+        Git tell all status noe we are on mater branch and no changes here
+
+c) make a file to Add in local repo
+
+d) git add filename
+
+        add file in stagging area
+
+e) git commit
+        Git give a text area to add message: help multiple line message
+        root-commit -- first commit
+        now there are changes in git history     
+Done
+
+2> Existing Project to add in git
+
+a) Git intilizer make a demo project
+
+b) mv init-project web-project
+
+c) cd to web-project
+
+d) git init
+
+        It iniciate a git repo in this working directory by making a .git file
+
+e) git status
+
+        git give you all detail
+
+f) git add *
+        add to stagging area
+
+g) git commit 
+    open messagin area add message
+
+f) git push origin master
+
+g) To remove this project control from git delete .git
+
+3> Clone project
+
+a) click fork to create a copy in personal space
+b) git clone url
+        To clone it my repo
+
+c) move that folder
+
+d) now you can work acc.
+
+e) git status
+
+----------------------------------------------------------------------------------------
+
+New file in Git Repository
+
+all avobe there is only one commond added
+
+avobe commond use --> add, ststus, commit, push, clone.
+
+a) git pull origin master 
+
+        add chages in remote by other user into your local repo
+
+---------------------------------------------------------------------------------------
+TRACKING File
+
+NOTE:: your config ofgit is avilable in .gitconfig in home directory
+
+you can shortcut add and commit commond
+
+a) git commit -am "messsage"
+
+b) To find list of all tracking files is 
+
+        git ls-file
+
+        they are the file which are track by git means in staging area or commited one
+
+c) if you add some thing in file which is stajing area then you have to use git add
+        for adding those changes.
+
+d) RECURSIVELLY ADDING File
+
+        if you have a nested folder structure with changes 
+        git status shows only parrent
+
+        git add .
+        add all fiel recusersivelly
+
+        git commit 
+
+        Done
+
+e) BackOut changes
+
+        git reset HEAD filename  -- to unstage any file
+        git checkout -- filename  -- remove all changes in file came to last commit
+
+f) Rename and move file
+
+        git mv  -- to move or Rename
+         When you  move outside then for git its two operation one delete and mv
+
+g) git rm  -- only delete tracked files.
+
+        you also have to commit the change.
+        If you reset then you have to add.
+        if you checkout then it did the all work.
+        if you DELETE a trcked file directly then 
+                git add -A   -- update all changes 
+                then commit
+        
+h)history
+
+        git log commond use to show history
+        options:- no option  -- commit history in reverse order (Contain hash and athor details)
+                  abbrev-commmit  -- commit id become Small
+                  oneline  -- one line
+                  graph  -- assci graph
+                  decorate  -- add tag
+                  aflasf ... flksfs  --- range of commit
+                  since="3 days ago"  -- day basis
+                  -- filename   -- any change in file
+                  --follow  --- follow Rename
+
+
+        git show commitId  other view details
+
+I) Alias
+
+        git config --global  alias.hist "log --all --graph --oneline --decorate"
+                no git in " commond"
+        All alias are store in gitconfig
+
+G) Exclude Unwanted file
+
+        gitIgnore
+
+I) Sync changes in git Repository
+        
+        git push origin master
+
+------------------------------------------------------------------------------------------------------------------------
+
+VISUL  P4 Merge
+
+        To setup p4 merge as a diff or merge tool
+        git config --global merge.tool p4merge
+        git config --global mergetool.p4merge.path "path of p4 merge"
+        git config --global mergetool.promt false
+
+        same set diff tool
+
+NOTE:: to open config file 
+        git  config --global -e
+
+-------------------------------------------------------------------------------------------------------------------------
+COMPARISIONS
+
+a) b/w dir and staging area
+        git diff
+
+b) b/w dir and commit
+        git diff HEAD
+
+c) b/w staging and commit
+        git diff --staged HEAD
+
+d) b/w diffrent Commits
+        git diff commitId1 commitId2
+        
+e) b/w local and remote master
+        git diff master orgin/master
+
+NOTE:: how to limit for one file
+        git diff -- filename
+
+       HEAD point Last commit in git
+       HEAD^ -- Head -1 
+
+---------------------------------------------------------------------------------------------------
+
+Branches
+
+a) Work accordinglly to topics
+
+b) Check all Branches   
+        git branch -a
+
+c) To create new branch
+        git branch branchName
+
+d) To switch branch
+        git checkout branchName
+
+e) To rename Branches
+        git branch -m oldBranch new branch
+
+f) To delete Branches
+        git -d branchName
+
+g) All Local Branches
+        git branch
+
+h) To crate a new branch an switch in it
+        git checkout -b branchName
+
+I) To Merge Branches
+        1) switch branch
+        git checkout branchName
+        2) check changes (best practice)
+        git diff ref1 ref2
+        3)Branch Name 
+        git merge breanchName (Fast Forward) no change in home branch
+
+J) To dissable FastForward merge
+        git  merge --no-ff
+
+K) Merge Confilicts
+        When there is n Confilicts then git not merge and give you a new file
+        contining both merge then delete those you did not want.
+        Best way to use p4merge tool.
+
+------------------------------------------------------------------------------------------
+
+Rebasing
+
+a) simple rebase
+
+NOTE: When there is any commit in merge then it take commit message
+
+
+
