@@ -287,3 +287,11 @@ Rebasing
 
 a) simple rebase
         git rebase branchName
+
+b) Working with conflicts in rebase
+        1)abort
+                git rebase --abort
+        
+        2)TO resolve
+                git mergetool    -- resolve merging
+                 
