@@ -322,7 +322,19 @@ But if you want to stach untrack file then
 
 multiple stach
 
-        
+        g) git stash save "Message for stash"
+        h) git stash show stash@{index}
 
+This stach ref will work with any stash commond.
+
+        I) git stash clear  -- delete all stash
+        J) git stash branch branchName  --
+                                        New brach created
+                                        switch
+                                        stash apply
+                                        stash drop
+        
+        Mainly use when we want to move any work in in new branch in middle.
+        
 
 NOTE:: git list-fs
