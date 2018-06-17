@@ -299,3 +299,30 @@ b) Working with conflicts in rebase
                 git pull --rebase origin master
 
         NOTE:: git fetch update refrenes.
+
+--------------------------------------------------------------------------------------------
+
+Stashing
+
+Stashing is used when you are doing something and required to do some other worh immediatly 
+but previous work not save or not ready to add, Then you stach that work and and start new 
+after completting you can access that work again .
+
+        a) git stash   -- save the work
+        b) git stash apply  -- reopen stash
+        c) git stash list  -- list all stash
+        d) git stash drop  -- drop the last stash
+        
+
+Git stash take care of only track file not untrack File.
+But if you want to stach untrack file then
+
+        e)git stash -u
+        f) git stash pop  -- apply+drop
+
+multiple stach
+
+        
+
+
+NOTE:: git list-fs
