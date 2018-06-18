@@ -33,6 +33,9 @@ new file --  File came in staging area not commit yet
 
 git commit -m "message for Commit"
 
+NOTE:: Search about git commit --amend  --> updating commit message
+
+
 Till Every thing is on Local Nothing on github
 
 NOW PUSH
@@ -335,6 +338,30 @@ This stach ref will work with any stash commond.
                                         stash drop
         
         Mainly use when we want to move any work in in new branch in middle.
-        
+
 
 NOTE:: git list-fs
+
+---------------------------------------------------------------------------------------------------------
+
+TAGING::
+
+tag alway work with current commit
+
+Light Weight Tag
+        a)git tag tagName   -- create new tag
+        b)git tag --list
+        c)git tag --delete tagName
+        d)git show mytag  -- show tag commit
+
+Annotated Tag
+
+        e) git tag -a tagName  -- mainly conatin version in Name
+                open message window there you add tag message
+                it help in show commond
+
+Comparing Tag
+
+        f) git diff tagName1 tagName2
+
+        
