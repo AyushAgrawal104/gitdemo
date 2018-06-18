@@ -364,4 +364,16 @@ Comparing Tag
 
         f) git diff tagName1 tagName2
 
+To a specific commit which you do previous
+        h) git tag -a tagName commitId
         
+Changing tag ref to a commit id
+        g) git tag -a tagId -f newTagId
+
+Remote TAGING
+        I)git push origin tagName
+                By pushing we can push commit or/add tag also
+
+        J)git push origin brachNAme --tags
+
+        K)git push origin :tagname  -- this : act as not operator
