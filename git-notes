@@ -152,7 +152,7 @@ d) RECURSIVELLY ADDING File
 
 e) BackOut changes
 
-        git reset HEAD filename  -- to unstage any file
+        git reset HEAD -- filename  -- to unstage any file
         git checkout -- filename  -- remove all changes in file came to last commit
 
 f) Rename and move file
