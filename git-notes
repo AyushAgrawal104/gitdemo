@@ -24,6 +24,14 @@ When you ommit  code in dev branch then junkins run and check every thing then a
 
 When you switch a branch please commit code or stah it  -> 
 
+When you have merge and only one have changes (Fast forward) code then only pointer moves not code.
+
+When you have changes in both branch then it done in 3 way merge:: 
+            #3 way merge::--
+                Go to master new Commit happen 
+                if two diffrent file have changs then autocommit
+                if same file then conflicts
+
 -------------------------------------------------------------
 
 GIT Tutorial:
