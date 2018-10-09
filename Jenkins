@@ -1,1 +1,32 @@
+Deployment Pipe Line
+   
+    1> Install Apache
+    2> Copy Code
+    3> Start Apache
+    
+    All Three by Code of Automation
+    
+Toll Required
+    1> bash
+    2> git
+    3> ssh
+    
+Install Them 
+Check Access
+
+Plugin :: 
+ 
+  Git 
+  SSh for bash and ssh
+  
+  
+ Default user for cloud 
+ 
+ ReadHat ec2-user
+ Ubantu  ubantu
+ Centos  centos
+ 
+ 
+ 
+  
 
