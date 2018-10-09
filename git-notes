@@ -1,3 +1,15 @@
+Git changing::
+
+git cp
+git rm
+git mv
+
+When you use sample mv then that file deleted and created a new error in tracking
+
+
+
+-------------------------------------------------------------
+
 GIT Tutorial:
 
 Make a Git Repository:
