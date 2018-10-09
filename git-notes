@@ -7,6 +7,15 @@ git mv
 When you use sample mv then that file deleted and created a new error in tracking
 
 
+Master is a main line
+Branch is a pointer to commit
+In git you checkout branch and that is pointed by head HEAD denoted by *
+
+When you create a branch -> when a sprint start you create two branch whit name containing 
+    sprint name one for developer and other to jenkins
+    
+1> dev branch  --> for developer only push access
+2> tested branch --> for pull or clone only
 
 -------------------------------------------------------------
 
