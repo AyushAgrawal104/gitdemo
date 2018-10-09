@@ -32,6 +32,8 @@ When you have changes in both branch then it done in 3 way merge::
                 if two diffrent file have changs then autocommit
                 if same file then conflicts
 
+Its not compulsary that we track all remote branch
+
 -------------------------------------------------------------
 
 GIT Tutorial:
