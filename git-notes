@@ -20,7 +20,9 @@ When you create a branch -> when a sprint start you create two branch whit name 
 
 So POINT::
 
-When you ommit  code in dev branch then junkins run and check every thing then after al grean commit to t ested one.
+When you ommit  code in dev branch then junkins run and check every thing then after al grean commit to tested one.
+
+When you switch a branch please commit code or stah it  -> 
 
 -------------------------------------------------------------
 
